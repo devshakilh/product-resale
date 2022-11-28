@@ -38,7 +38,7 @@ const Navbar = () => {
                         <li><Link to='addservice'>Add Product</Link></li>
                         <li><Link to='myproduct'>My Product</Link></li>
                         <li><Link to='blog'>Blog</Link></li>
-                        <li><Link to='dashboard'>Dashboard</Link></li>
+
                     </ul>
                 </div>
                 <div className="navbar-end">
