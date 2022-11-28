@@ -5,7 +5,7 @@ Refrigerator sell and buy website (Refrigerator)
 Documentation Link -> [Link](https://reactrouter.com/en/main/start/overview)
 
 ## Live Link 
-Hosted in firebase -> Refrigerator Sell (https://single-doctor-dca6b.web.app/)
+Hosted in firebase -> Refrigerator Sell (https://refrigerator-seller.web.app)
 
 
 
