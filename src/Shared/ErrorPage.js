@@ -20,11 +20,7 @@ const ErrorPage = () => {
                     <p className='text-2xl font-semibold md:text-3xl mb-8'>
                         Sorry, we couldn't find this page.
                     </p>
-                    <Link to='/'>
-                        <button className="btn btn-outline bg-slate-500 btn-success">
-                            Back to homepage
-                        </button>
-                    </Link>
+
                 </div>
             </div>
         </section >
