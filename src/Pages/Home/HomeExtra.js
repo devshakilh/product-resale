@@ -4,14 +4,14 @@ const HomeExtra = () => {
     return (
         <div>
             <div className="card lg:card-side shadow-xl  my-6">
-                <div className='grid  bg-zinc-700  grid-cols-1 gap-2   lg:w-1/2 lg:grid-cols-2'>
+                <div className='grid  bg-zinc-700  grid-cols-1    lg:w-1/2 lg:grid-cols-2'>
                     <div >
-                        <figure><img className='lg:h-72  lg:w-72 h-96 w-96   mb-6' src="https://i.ibb.co/jWqV6D6/534-14-070-921x.webp" alt="Album" /></figure>
-                        <figure><img className='lg:h-72 mb-4 lg:w-72 h-96 w-96' src="https://i.ibb.co/qxqfsBT/banner3.jpg" alt="Album" /></figure>
+                        <figure><img className='lg:h-72  lg:w-64 h-96 w-96 my-4  ' src="https://i.ibb.co/jWqV6D6/534-14-070-921x.webp" alt="Album" /></figure>
+                        <figure><img className='lg:h-72 mb-4 lg:w-64 h-96 w-96' src="https://i.ibb.co/qxqfsBT/banner3.jpg" alt="Album" /></figure>
                     </div>
                     <div>
-                        <figure><img className='mb-6  lg:h-72 lg:w-72 h-96 w-96' src="https://i.ibb.co/tM1Y0GT/W020220418469705137506-350.jpg" alt="Album" /></figure>
-                        <figure><img className='lg:h-72 lg:w-72 h-96 w-96' src="https://i.ibb.co/vQZn1mN/images.jpg" alt="Album" /></figure>
+                        <figure><img className='  lg:h-72 lg:w-64 h-96 w-96 my-4' src="https://i.ibb.co/tM1Y0GT/W020220418469705137506-350.jpg" alt="Album" /></figure>
+                        <figure><img className='lg:h-72 lg:w-64 h-96 w-96' src="https://i.ibb.co/vQZn1mN/images.jpg" alt="Album" /></figure>
                     </div>
                 </div>
 

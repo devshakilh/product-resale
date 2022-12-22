@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 const AddService = () => {
     const { user } = useContext(AuthContext);
     // const [add, setAdd] = useState([])
@@ -79,7 +80,12 @@ const AddService = () => {
 
                 <textarea className="textarea h-24 w-full textarea-accent" name='short_des' placeholder="Description" required></textarea>
                 <div className='text-center'>
-                    <input className=' btn text-white ' type="submit" value="Add Product" />
+                    {
+                        user ? <input className=' btn text-white ' type="submit" value="Add Product" />
+                            :
+                            <div><Link to='/login'><button className='text-4xl text-black btn btn-accent'>Login</button></Link></div>
+                    }
+
                 </div>
             </form>
             {/* <AddServiceCard></AddServiceCard> */}

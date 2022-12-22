@@ -12,6 +12,7 @@ import Category from "../Pages/Product/Category";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AddService from "../Pages/Product/AddService";
 import MyProduct from "../Pages/Product/MyProduct";
+import DashboardLayout from "../Layout/DashboardLayout";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -55,11 +56,18 @@ const router = createBrowserRouter([
                 path: 'myproduct',
                 element: <MyProduct></MyProduct>
             },
-            {
-                path: 'dashboard',
-                element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
-            },
+
         ]
-    }
+    },
+    {
+        path: '/dashboard',
+        element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <Dashboard></Dashboard>
+            }
+        ]
+    },
 ])
 export default router;

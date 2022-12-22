@@ -7,7 +7,7 @@ const Register = () => {
 
     const [error, setError] = useState('');
 
-    const { createUser, updateUserProfile, } = useContext(AuthContext);
+    const { createUser, } = useContext(AuthContext);
 
 
     const { providerLogin } = useContext(AuthContext);
@@ -24,23 +24,24 @@ const Register = () => {
     const handleSubmit = event => {
         event.preventDefault();
         const form = event.target;
-        const email = form.email.value;
         const name = form.name.value;
-        // const photoURL = form.photoURL.value;
+        const email = form.email.value;
+
 
         const password = form.password.value;
-        // console.log(name, photoURL, email, password);
+        console.log(name, email, password);
 
 
-        createUser(email, password, name)
+        createUser(email, password,)
             .then(result => {
                 const user = result.user;
                 console.log(user);
                 setError('');
                 form.reset();
 
+
                 navigate(from, { replace: true });
-                // toast.success('Login sucessfully')
+
             })
             .catch(e => {
                 console.error(e);
@@ -49,16 +50,6 @@ const Register = () => {
     }
 
 
-    const handleUpdateUserProfile = (name, photoURL) => {
-        const profile = {
-            displayName: name,
-            photoURL: photoURL
-        }
-
-        updateUserProfile(profile)
-            .then(() => { })
-            .catch(error => console.error(error));
-    }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
