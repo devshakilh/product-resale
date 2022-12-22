@@ -15,7 +15,27 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="card lg:card-side shadow-xl  my-6">
+                <div className='grid  bg-zinc-700  grid-cols-1    lg:w-1/2 lg:grid-cols-2'>
+                    <div >
+                        <figure><img className='lg:h-72  lg:w-64 h-96 w-96 my-4  ' src="https://i.ibb.co/0jGkDnd/lg.gif" alt="Album" /></figure>
+                        <figure><img className='lg:h-72 mb-4 lg:w-64 h-96 w-96' src="https://i.ibb.co/4FYcnP0/singer.png" alt="Album" /></figure>
+                    </div>
+                    <div>
+                        <figure><img className='  lg:h-72 lg:w-64 h-96 w-96 my-4' src="https://i.ibb.co/P969NZ0/walton.jpg" alt="Album" /></figure>
+                        <figure><img className='lg:h-72 lg:w-64 h-96 w-96' src="https://i.ibb.co/WynmPm7/comming.webp" alt="Album" /></figure>
+                    </div>
+                </div>
 
+                <div className="card-body content-center lg:w-1/2">
+                    <h1 className="text-5xl font-bold ">Best Refrigerator! in Bangladesh</h1>
+                    <p className="py-6 text-3xl
+                     font-bold">Direct Cool Refrigerator <br />
+                        Walton <br /> Singer</p>
+                    <p className="py-6 text-3xl font-bold">LG <br /> Coming Soon.. </p>
+
+                </div>
+            </div>
             <div>
 
                 <Product></Product>
